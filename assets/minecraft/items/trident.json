@@ -1,0 +1,204 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Метательный нож",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:use_duration",
+          "entries": [
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/throwing_knife_pulling_0"
+              }
+            },
+            {
+              "threshold": 13,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/throwing_knife_pulling_1"
+              }
+            },
+            {
+              "threshold": 18,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/throwing_knife_pulling_2"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/trident/throwing_knife"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Дрёма",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:use_duration",
+          "entries": [
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/sandman_pulling_0"
+              }
+            },
+            {
+              "threshold": 13,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/sandman_pulling_1"
+              }
+            },
+            {
+              "threshold": 18,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/sandman_pulling_2"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/trident/sandman"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Кейси Джонс",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:use_duration",
+          "entries": [
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/casey_jones_pulling_0"
+              }
+            },
+            {
+              "threshold": 13,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/casey_jones_pulling_1"
+              }
+            },
+            {
+              "threshold": 18,
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/weapons/trident/casey_jones_pulling_2"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/trident/casey_jones"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "when": [
+            "gui",
+            "ground",
+            "fixed",
+            "on_shelf"
+          ],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/trident"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:condition",
+        "property": "minecraft:using_item",
+        "on_true": {
+          "type": "minecraft:special",
+          "model": {
+            "type": "minecraft:trident"
+          },
+          "base": "minecraft:item/trident_throwing"
+        },
+        "on_false": {
+          "type": "minecraft:special",
+          "model": {
+            "type": "minecraft:trident"
+          },
+          "base": "minecraft:item/trident_in_hand"
+        },
+        "transformation": {
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "left_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "right_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            -1.0,
+            -1.0
+          ]
+        }
+      }
+    }
+  }
+}

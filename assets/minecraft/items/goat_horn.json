@@ -1,0 +1,99 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Поддержка батальона",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/battalion_backup"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/tooting_battalion_backup"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Фанфара",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/fanfare"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/tooting_fanfare"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Мегафон",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/megaphone"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/tools/goat_horn/tooting_megaphone"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/goat_horn"
+      },
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/tooting_goat_horn"
+      }
+    }
+  }
+}

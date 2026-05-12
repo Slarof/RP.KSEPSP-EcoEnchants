@@ -1,0 +1,661 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Боевой молот",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/netherite_battle_hammer"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Копьё",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/netherite_spear"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Алебарда",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/netherite_halberd"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Меч-секира",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/axeblade"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Топор тысячи металлов",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/axe_of_thousand_metals"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Боевой топор",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/battle_axe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Бензопила",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/chainsaw"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Аварийный топор",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/crash_axe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Пожарный топор",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/fire_axe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Копьё удачи",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/fortune_spear"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Шёпот смерти",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/whisper_of_death"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Гитара не для блондинов",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/4_non_blondes"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Акустическая гитара",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/acoustic_guitar"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Балалайка",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/balalaika"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Банджо",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/banjo"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Большая балалайка",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/big_balalaika"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Классическая гитара",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/classical_guitar"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Электрогитара Curie",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/curie"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Электрогитара Dean ML",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/dean_ml"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Электрогитара The True Axe",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/the_true_axe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Электрогитара Урал",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/ural"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Головорез",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/headtaker"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Топор горца",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/highland_axe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Заражённое копьё",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/infested_spear"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Кледенец",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/lollichop"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Секира",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/poleaxe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Ампутатор",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/amputator"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Медицинская пила",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/bonesaw"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Лобзик",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/jigsaw"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Пила",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/saw"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Костяная коса",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/bone_scythe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Жатвенная коса",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/harvest_scythe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Коса",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/scythe"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Вихрь",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/whirlwind"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Убер-пила",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/ubersaw"
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Вита-пила",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "ksepsp:item/9_0/tools/axe/vita_saw"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_axe"
+    }
+  }
+}

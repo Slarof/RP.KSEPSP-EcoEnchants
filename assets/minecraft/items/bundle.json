@@ -1,0 +1,817 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Клош",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "thirdperson_righthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/cloche"
+              }
+            },
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:condition",
+                "property": "minecraft:bundle/has_selected_item",
+                "on_false": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/cloche_item"
+                },
+                "on_true": {
+                  "type": "minecraft:composite",
+                  "models": [
+                    {
+                      "type": "minecraft:model",
+                      "model": "ksepsp:item/9_0/other/bundle/cloche_open_back"
+                    },
+                    {
+                      "type": "minecraft:bundle/selected_item"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/cloche_left_hand"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Пачка сигарет",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/pack_of_cigarettes"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/pack_of_cigarettes_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/pack_of_cigarettes_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/pack_of_cigarettes_item_open_front"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Портсигар",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "thirdperson_righthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/cigarette_case"
+              }
+            },
+            {
+              "when": [
+                "firstperson_lefthand",
+                "thirdperson_lefthand"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/cigarette_case_left_hand"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/cigarette_case_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/cigarette_case_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Книга с тайником",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "thirdperson_righthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/book_with_recess"
+              }
+            },
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:condition",
+                "property": "minecraft:bundle/has_selected_item",
+                "on_false": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/book_with_recess_item"
+                },
+                "on_true": {
+                  "type": "minecraft:composite",
+                  "models": [
+                    {
+                      "type": "minecraft:model",
+                      "model": "ksepsp:item/9_0/other/bundle/book_with_recess_item_open_back"
+                    },
+                    {
+                      "type": "minecraft:bundle/selected_item"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/book_with_recess_left_hand"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Посох с котомкой",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/bindle"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:bundle/selected_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/bindle_item_open_back"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/bindle_item"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Мусорный пакет",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/trash_bag"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/trash_bag_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/trash_bag_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/trash_bag_item_open_front"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Сумка с медикаментами",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/medpack"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/medpack_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/medpack_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/medpack_item_open_front"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Коробка с пиццей",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "thirdperson_righthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/pizza_box"
+              }
+            },
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:condition",
+                "property": "minecraft:bundle/has_selected_item",
+                "on_false": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/pizza_box_item"
+                },
+                "on_true": {
+                  "type": "minecraft:composite",
+                  "models": [
+                    {
+                      "type": "minecraft:model",
+                      "model": "ksepsp:item/9_0/other/bundle/pizza_box_item_open_back"
+                    },
+                    {
+                      "type": "minecraft:bundle/selected_item"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/pizza_box_left_hand"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Коробка с инопланетной пиццей",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "thirdperson_righthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/alien_pizza_box"
+              }
+            },
+            {
+              "when": [
+                "gui"
+              ],
+              "model": {
+                "type": "minecraft:condition",
+                "property": "minecraft:bundle/has_selected_item",
+                "on_false": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/alien_pizza_box_item"
+                },
+                "on_true": {
+                  "type": "minecraft:composite",
+                  "models": [
+                    {
+                      "type": "minecraft:model",
+                      "model": "ksepsp:item/9_0/other/bundle/alien_pizza_box_item_open_back"
+                    },
+                    {
+                      "type": "minecraft:bundle/selected_item"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/alien_pizza_box_left_hand"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Кошелёк",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/wallet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/wallet_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/wallet_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Рюкзак",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/backpack"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/backpack_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/backpack_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/backpack_item_open_front"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Колчан",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_righthand",
+                "thirdperson_lefthand",
+                "head",
+                "ground",
+                "fixed"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/quiver"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:bundle/has_selected_item",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/other/bundle/quiver_item"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/quiver_item_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/other/bundle/quiver_item_open_front"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Коробок спичек",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:bundle/has_selected_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/matchbox_item"
+          },
+          "on_true": {
+            "type": "minecraft:composite",
+            "models": [
+              {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/matchbox_item_open_back"
+              },
+              {
+                "type": "minecraft:bundle/selected_item"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Палитра",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:bundle/has_selected_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/other/bundle/palette"
+          },
+          "on_true": {
+            "type": "minecraft:composite",
+            "models": [
+              {
+                "type": "minecraft:model",
+                "model": "ksepsp:item/9_0/other/bundle/palette_open_back"
+              },
+              {
+                "type": "minecraft:bundle/selected_item"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:bundle/has_selected_item",
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/bundle"
+      },
+      "on_true": {
+        "type": "minecraft:composite",
+        "models": [
+          {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bundle_open_back"
+          },
+          {
+            "type": "minecraft:bundle/selected_item"
+          },
+          {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bundle_open_front"
+          }
+        ]
+      }
+    }
+  }
+}

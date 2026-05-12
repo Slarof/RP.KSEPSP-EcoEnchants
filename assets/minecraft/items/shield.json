@@ -1,0 +1,779 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Выбитая дверь",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/broken_door"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/broken_door_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Выбитая железная дверь",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/broken_iron_door"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/broken_iron_door_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Мобильный телефон",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/cellphone"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/cellphone_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Энергетический щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/energy_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/energy_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Золотая звезда",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/golden_star"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/golden_star_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Ледяной щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/ice_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/ice_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Бревенчатый щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/log_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/log_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Полицейский щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/police_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/police_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Крышка кастрюли",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/pot_lid"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/pot_lid_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Хитиновый щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/scute_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/scute_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Спартанский щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/spartan_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/spartan_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Шелленбаум",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/schellenbaum"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/schellenbaum_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Валентинов оберег",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/valentine_amulet"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/valentine_amulet_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Черепаший щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/turtle_shield"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "ksepsp:item/9_0/weapons/shield/turtle_shield_blocking"
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Штурмовой щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/chargin_targe_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/chargin_targe"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/chargin_targe_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/chargin_targe_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Геральдический щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/heraldic_shield_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/heraldic_shield"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/heraldic_shield_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/heraldic_shield_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Бронепанцирь",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/razorback_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/razorback"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/razorback_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/razorback_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Роскошное прикрытие",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/splendid_screen_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/splendid_screen"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/splendid_screen_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/splendid_screen_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Верный штурвал",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/tide_turner_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/tide_turner"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/tide_turner_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/tide_turner_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Бывалый рулевой",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/wheel_of_misfortune_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/wheel_of_misfortune"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/wheel_of_misfortune_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/wheel_of_misfortune_blocking"
+            }
+          }
+        }
+      },
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Деревянный щит",
+                "italic": true
+              }
+            ],
+            "italic": false
+          }
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/wooden_shield_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/wooden_shield"
+            }
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:damage",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "ksepsp:item/9_0/weapons/shield/wooden_shield_blocking_broken"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "ksepsp:item/9_0/weapons/shield/wooden_shield_blocking"
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_false": {
+        "type": "minecraft:special",
+        "model": {
+          "type": "minecraft:shield"
+        },
+        "base": "minecraft:item/shield"
+      },
+      "on_true": {
+        "type": "minecraft:special",
+        "model": {
+          "type": "minecraft:shield"
+        },
+        "base": "minecraft:item/shield_blocking"
+      }
+    },
+    "transformation": {
+      "left_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "right_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        -1.0,
+        -1.0
+      ],
+      "translation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
